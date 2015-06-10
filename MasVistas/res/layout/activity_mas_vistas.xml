@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".MasVistasActivity" >
+
+    <EditText
+        android:id="@+id/entrada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Introduce un número"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/entrada"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="109dp"
+        android:background="@drawable/boton"
+        android:onClick="sePulsa" />
+
+    <Button
+        android:id="@+id/button0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/entrada"
+        android:layout_alignBottom="@+id/entrada"
+        android:layout_centerHorizontal="true"
+        android:onClick="sePulsa0"
+        android:tag="0"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/salida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/entrada"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        
+        android:hint="Resultado"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
